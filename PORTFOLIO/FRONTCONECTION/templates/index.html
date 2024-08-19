@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %} {% load static %} {% block content %}
+<div class="container">
+    {% include 'base/sidebar.html' %}
+    <main class="main-content">
+        {% include 'base/slider.html' with corosel_data=carousel %}
+    </main>
+</div>
+<div class="container-fluid box-resize">
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+            <h2>Latest News About ML</h2>
+            <div class="row">
+                {% for post in posts %}
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img
+                            src="{{ post.image }}"
+                            class="card-img-top"
+                            alt="{{ post.title }}"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">{{post.title}}</h5>
+                            <p class="card-text">{{ post.description }}</p>
+                            <a href="{{post.html_url}}" class="btn btn-primary"
+                                >Read More</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

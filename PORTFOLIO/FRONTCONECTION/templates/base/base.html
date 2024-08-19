@@ -1,0 +1,143 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Abhinesh Kumar</title>
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+
+        <link href='{% static "css/nav.css" %}' rel="stylesheet" />
+        <link href='{% static "css/sidebar.css" %}' rel="stylesheet" />
+        <link href='{% static "css/index.css" %}' rel="stylesheet" />
+        <link href='{% static "css/about.css" %}' rel="stylesheet" />
+        <link href='{% static "css/footer.css" %}' rel="stylesheet" />
+        <link href='{% static "css/projects.css" %}' rel="stylesheet" />
+        <link href='{% static "css/contact.css" %}' rel="stylesheet" />
+        <link href='{% static "css/service.css" %}' rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'img/logo.jpeg' %}" alt="logo" />
+            </a>
+            <div class="colection collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="home" href="{% url 'index' %}"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="about" href="{% url 'about' %}"
+                            >About</a
+                        >
+                    </li>
+                    <li class="nav-item active">
+                        <a
+                            class="nav-link"
+                            id="project"
+                            href="{% url 'projects' %}"
+                            >Projects</a
+                        >
+                    </li>
+                    <li class="nav-item active">
+                        <a
+                            class="nav-link"
+                            id="contact"
+                            href="{% url 'contact' %}"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        {% block content %} {% endblock %}
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>
+                        Email:
+                        <a
+                            href="mailto:your-email@example.com"
+                            class="social-icon"
+                            >deepabhineshacp@gmail.com</a
+                        >
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a
+                                href="https://facebook.com"
+                                target="_blank"
+                                class="social-icon"
+                                >Facebook</a
+                            >
+                            <i class="fab fa-facebook"></i>
+                        </li>
+                        <li>
+                            <a
+                                href="https://twitter.com"
+                                target="_blank"
+                                class="social-icon"
+                                >Twitter</a
+                            >
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li>
+                            <a
+                                href="https://linkedin.com"
+                                target="_blank"
+                                class="social-icon"
+                                >LinkedIn</a
+                            >
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                        <li>
+                            <a
+                                href="https://instagram.com"
+                                target="_blank"
+                                class="social-icon"
+                                >Instagram</a
+                            >
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/Abhisingh980"
+                                target="_blank"
+                                class="social-icon"
+                                >GitHub</a
+                            >
+                            <i class="fab fa-github"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <p>&copy; Abhinesh Kumar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{% static 'js/nav.js' %}"></script>
+        }
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

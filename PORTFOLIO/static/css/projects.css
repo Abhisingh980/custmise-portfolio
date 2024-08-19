@@ -1,0 +1,102 @@
+/* Resetting some default styles */
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 10px;
+    background: #0f0f0f;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+}
+
+/* Project Card Styling */
+.project-card {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(18, 18, 18, 1.5);
+    overflow: hidden;
+    background: #fff;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+.project-link:hover {
+    text-decoration: underline;
+    border-color: #f51105;
+    color: #f51105;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(18, 18, 18, 2.5);
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Project Header Styling */
+.project-header {
+    background: #1b2b2b;
+    color: #38c4d1;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #38c4d1;
+}
+
+/* Project Body Styling */
+.project-body {
+    padding: 20px;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #1c0663;
+    margin-bottom: 12px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+.project-tech {
+    color: #555;
+    font-style: italic;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+    transform: rotate(-2deg);
+}
+
+/* Hover Effects */
+.project-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 6px 12px rgba(18, 18, 18, 1.5);
+}

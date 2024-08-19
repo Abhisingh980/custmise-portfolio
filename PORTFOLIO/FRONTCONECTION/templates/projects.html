@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %} {% load static %} {%block content %}
+<!-- Projects start -->
+
+<header>
+    <h1>My Projects</h1>
+</header>
+<section class="projects-grid">
+    {% for project in projects %}
+    <div class="project-card">
+        <a href="{{ project.html_url }}" class="project-link" target="_blank">
+            <div class="project-header">
+                <h2 class="project-title">{{ project.title }}</h2>
+            </div>
+        </a>
+        <div class="project-body">
+            <p class="project-description">
+                Discription : {{ project.description }}
+            </p>
+            <p class="project-tech">
+                README: {{ project.readme|slice:"0:100" }}
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+{% endblock %}

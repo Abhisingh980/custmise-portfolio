@@ -1,0 +1,33 @@
+{% extends 'base/base.html' %} {% load static %} {% block content %}
+
+<div class="container head-class">
+    <header>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center title-service">Our Services</h1>
+        </div>
+    </header>
+    </div>
+    <div class="row">
+        <div class="col-md-12 ">
+            {% for service in services %}
+            <div class="card card-body-image mb-4">
+                <img
+                    src="{{service.image.url}}"
+                    class="card-img-top image-container"
+                    alt="{{service.title}}"
+                />
+                <div class="card-body title-body">
+                    <h5 class="card-title title-card">{{service.title}}</h5>
+                    <p class="card-text text-card">{{service.description}}</p>
+                    <a href="{{service.website}}" class="btn btn-primary button"
+                        >Read More</a
+                    >
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

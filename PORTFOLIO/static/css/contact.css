@@ -1,0 +1,159 @@
+/* General Body Styles */
+body {
+    font-family: "Arial", sans-serif;
+    background: #9beef2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #0c0d0d;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateX(0deg);
+    transition:
+        transform 0.6s ease,
+        box-shadow 0.6s ease;
+}
+
+.contact-section:hover {
+    transform: perspective(1000px) rotateX(10deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+.contact-section h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styles */
+.contact-section p {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Label Styles */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.form-group label::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+/* Input Styles */
+.form-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styles */
+.btn-submit {
+    background-color: #19e6c0;
+    color: #0c0d0d;
+    border: none;
+    padding: 15px;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(10, 20, 30, 0.1);
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-submit:focus {
+    outline: none;
+}
+/* Container for messages */
+.message-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General message styling */
+.message {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-family: "Arial", sans-serif;
+}
+
+/* Success message */
+.message.success {
+    background-color: #d4edda;
+    color: #3006bd;
+    border: 1px solid #c3e6cb;
+}
+
+/* Error message */
+.message.error {
+    background-color: #f8d7da;
+    color: #f71505;
+    border: 1px solid #f5c6cb;
+}
+.intl-tel-input {
+    width: 100%;
+}
