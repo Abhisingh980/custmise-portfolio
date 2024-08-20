@@ -41,7 +41,7 @@ EMAIL_USE_TLS = True  # Set to True for TLS, False for SSL
 EMAIL_USE_SSL = False  # Set to True for SSL, False for TLS
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'abhinesh147.herokuapp.com', 'abhinesh147.pythonanywhere.com']
 
 
 # Application definition
@@ -52,10 +52,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'livereload',
     'django.contrib.staticfiles',
-
-     "phonenumber_field",
+    "phonenumber_field",
 
 ]
 
@@ -67,6 +65,7 @@ INSTALLED_APPS += EXTAR_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

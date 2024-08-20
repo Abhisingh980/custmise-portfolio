@@ -21,6 +21,7 @@ from django.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
@@ -28,6 +29,10 @@ urlpatterns = [
     path('contact/', contact, name='contact'),
     path('projects/', projects, name='projects'),
     path('service/', services, name='service'),
+
+
+
+
 ]
 
 if settings.DEBUG:
