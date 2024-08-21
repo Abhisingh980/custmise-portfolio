@@ -27,8 +27,8 @@ GITACCESSTOKEN = str(os.environ.get('GITHUBACCESSTOKEN'))
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 
 
 
@@ -41,7 +41,7 @@ EMAIL_USE_TLS = True  # Set to True for TLS, False for SSL
 EMAIL_USE_SSL = False  # Set to True for SSL, False for TLS
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'abhinesh147.herokuapp.com', 'abhinesh147.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition

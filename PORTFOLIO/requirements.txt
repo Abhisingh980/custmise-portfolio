@@ -17,14 +17,17 @@ Deprecated==1.2.14
 Django==5.1
 django-livereload-server==0.5.1
 django-phonenumber-field==8.0.0
+docker==7.1.0
 exceptiongroup==1.2.2
 executing==2.0.1
 frozenlist==1.4.1
+gunicorn==23.0.0
 idna==3.7
 ipython==8.26.0
 jedi==0.19.1
 matplotlib-inline==0.1.7
 multidict==6.0.5
+packaging==24.1
 parso==0.8.4
 pexpect==4.9.0
 phonenumbers==8.13.43
@@ -49,5 +52,6 @@ typing_extensions==4.12.2
 urllib3==2.2.2
 watchfiles==0.23.0
 wcwidth==0.2.13
+whitenoise==6.7.0
 wrapt==1.16.0
 yarl==1.9.4
